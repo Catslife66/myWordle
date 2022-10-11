@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --grey: rgb(219, 218, 218);
+    --yellow: rgb(164, 164, 85);
+    --green:rgb(99, 176, 99);
+}
+
+.game {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.input-area {
+    width: 300px;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 5px;
+    margin: 10px auto;
+    border: 1px solid red;
+}
+
+.square {
+    display: flex;
+    width: 53px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.write {
+    background-color: var(--grey);
+    color: white;
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.keyboard {
+    background-color: bisque;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1, .row2, .row3 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 5px 0;
+    justify-items: center;
+}
+
+.row1 {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.letter {
+    width: 30px;
+    height: 50px;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    
+}
+
+.enter, .del {
+    width: 45px;
+}
+
+.pressed {
+    background-color:rgb(57, 13, 167);
+    color: white;
+}
+
+.gold {
+    background-color: var(--yellow);
+}
+
+.green1 {
+    background-color: var(--green);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+}
